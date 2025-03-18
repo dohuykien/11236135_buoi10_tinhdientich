@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính hình học Đỗ Huy Kiên</title>
+    <link rel="stylesheet" href="hinhhoc.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Máy tính hình học</h2>
+        <label for="shape">Chọn hình:</label>
+        <select id="shape" onchange="updateInputs()">
+            <option value="rectangle">Hình chữ nhật</option>
+            <option value="square">Hình vuông</option>
+            <option value="circle">Hình tròn</option>
+            <option value="triangle">Hình tam giác</option>
+            <option value="trapezoid">Hình thang</option>
+            <option value="rhombus">Hình thoi</option>
+        </select>
+        <div id="inputs"></div>
+        <button onclick="calculate()">Tính toán</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="hinhhoc.js"></script>
+</body>
+</html>
